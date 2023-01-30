@@ -72,6 +72,57 @@ img {
 }
 
 
+/* ------------------------------------------------------------- */
+/* ---------------------- Ventana el modal --------------------- */
+/* ------------------------------------------------------------- */
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed; 
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.is-hidden {
+    visibility:hidden;
+    opacity: 0;
+    pointer-events: 0;
+}
+
+.modal {
+    /* position: fixed; */
+    display: flex;
+    justify-content: flex-end;
+
+    WIdth: 528px;
+    height: 581px;
+    /* left: 50%; */
+    /* top: 50%; */
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal button{
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:white;
+    border-radius: 50%;
+}
+.icon-close{
+    fill: var(--body-color);
+}
+
+
 
 /* ------------------------------------------------------------- */
 /* --------------------------- Header -------------------------- */
@@ -99,6 +150,17 @@ img {
 
 .select { /*color de seleccion de pagina html*/
     color: var(--hover-color);
+    position: relative;
+}
+.select::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background: var(--hover-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: 0%;
 }
 
 .contact-list-link{  /* estilos de correo y telefono*/
@@ -110,6 +172,9 @@ img {
 
 a:hover, a:focus {
     color: var(--hover-color);
+}
+a:focus{
+    outline: solid  var(--hover-color);
 }
 
 
@@ -213,6 +278,9 @@ a:hover, a:focus {
     font-size: 16px;
     line-height: 30px;
 }
+.button-index:focus{
+    outline: solid var(--hover-color);
+}
 
 /* ----------------------> Flexbox <--------------------- */
 
@@ -314,11 +382,12 @@ a:hover, a:focus {
 .products-list-img{
     position: relative;
     flex-basis: calc((100% - 60px)/3);
+    /* z-index: -1; */
 }
 
 .title-product{
     display: flex;
-justify-content: center;
+    justify-content: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -423,7 +492,7 @@ justify-content: center;
 
 .social-media:hover, .social-media:focus{
     outline: none;
-    border: 1px solid var(--hover-color);
+    /* border: 1px solid var(--hover-color); */
     background:var(--hover-color);
     fill: var(--background-color);
 }
@@ -454,9 +523,12 @@ justify-content: center;
 }
 
 .client-icon:hover, .client-icon:focus{
-    outline: none;
+    /* outline: none; */
     border: 1px solid var(--hover-color);
     fill: var(--hover-color);
+}
+.client-icon:focus{
+    border: ;
 }
 
 
@@ -569,9 +641,9 @@ justify-content: center;
 }
 
 
-/* ----------------------------------------------------- */
-/* -------------------- Portafolio --------------------- */
-/* ----------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- Portafolio ----------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 .briefcase-list-button {
@@ -588,6 +660,7 @@ justify-content: center;
 }
 
 .briefcase-list-button:hover,.briefcase-list-button:focus {
+    outline: solid var(--hover-color);
     background: var(--hover-color);
     color: var(--background-color);
 }
@@ -649,14 +722,16 @@ justify-content: center;
 .briefcase-list-item{
     flex-basis: calc((100% - 60px) / 3);
     justify-content: center;
-    border: 1px solid #EEEEEE;
+     border: 1px solid #EEEEEE; 
 } 
 
-.briefcase-list-item:hover, .card-set .briefcase-list-item:focus{
+.briefcase-list-item:hover, .briefcase-list-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.
+
 
 .card-set h2{
     width: 322px;
@@ -664,7 +739,9 @@ justify-content: center;
     justify-content: center;
 }
 
-.text-cont-1{
+.text-cont{
     padding: 20px 24px;
 }
+
+
 

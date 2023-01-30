@@ -17,6 +17,21 @@
     <link rel="stylesheet" href="css/Styles.css" />
   </head>
   <body>
+
+    <!----------------------- Ventana modal ----------------------->
+    <!-- <button data-modal-open>click</button> -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close>
+          <a href="#" class="icon-close">
+            <svg width="14px" height="14px">
+              <use href="./imagenes/icon.svg#icon-close"></use>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+
     <!-- Cabecera -->
     <header class="cab">
       <div class="container box">
@@ -54,15 +69,14 @@
         </ul>
       </div>
     </header>
+
     <!-- Cuerpo -->
     <main>
       <!-- seccion del titulo de la pagina y el button -->
       <section class="section section-title">
         <div class="container"> <!--name.section-->
           <h1 class="page-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button type="button" class="button-index">
-            Solicite nuestro servicio
-          </button>
+          <button data-modal-open type="button" class="button-index">Solicite nuestro servicio</button>
         </div>
       </section>
         <!-- seccion de caracteristicas -->
@@ -219,23 +233,23 @@
                   </li>
                   <li class="icon-media">
                     <a href="" class="social-media">                
-                    <svg width="20px" height="20px">
-                      <use href="./imagenes/icon.svg#icon-twitter" ></use>
-                    </svg>
+                      <svg width="20px" height="20px">
+                        <use href="./imagenes/icon.svg#icon-twitter" ></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="icon-media">
                     <a href="" class="social-media">                
-                    <svg width="20px" height="20px">
-                      <use href="./imagenes/icon.svg#icon-facebook"></use>
-                    </svg>
+                      <svg width="20px" height="20px">
+                        <use href="./imagenes/icon.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="icon-media">
                     <a href="" class="social-media">                
-                    <svg width="20px" height="20px">
-                      <use href="./imagenes/icon.svg#icon-linkedin"></use>
-                    </svg>
+                      <svg width="20px" height="20px">
+                        <use href="./imagenes/icon.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -324,8 +338,7 @@
           </ul>
         </div>
       </section>
-      <!-- seccion clientes regu
-        lares -->
+      <!-- seccion clientes regulares -->
       <section class="section">+
           <div class="container">
           <h2 class="name-section">clientes regulares</h2>
@@ -379,6 +392,7 @@
         </div>
       </section>
     </main>
+
     <!-- Pie de pagina -->
     <footer class="footer-contact">
       <div class="container cont-contact" >
@@ -441,5 +455,8 @@
         </ul>
       </div>
     </footer>
+<!-- Vinculacion js al html -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
