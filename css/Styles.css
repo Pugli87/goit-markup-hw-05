@@ -1,10 +1,15 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul{
+:focus-visible {
+    outline: solid var(--hover-color);
+
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
     padding: 0;
 }
@@ -27,11 +32,11 @@ body {
     --hover-color:        #2196F3; /* color select */
 }
 
-p{
+p {
     margin-top: 0;   
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -60,14 +65,14 @@ img {
     overflow: hidden;
 } 
 
-.container{
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
-.section{
+.section {
     padding: 94px 0;
 }
 
@@ -108,7 +113,7 @@ img {
     border-radius: 4px;
 }
 
-.modal button{
+.modal button {
     margin-top: 8px;
     margin-right: 8px;
     padding: 8px;
@@ -118,7 +123,7 @@ img {
     background-color:white;
     border-radius: 50%;
 }
-.icon-close{
+.icon-close {
     fill: var(--body-color);
 }
 
@@ -140,7 +145,7 @@ img {
     letter-spacing: 0.03em;
 }
 
-.menu-list-link{
+.menu-list-link {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -148,11 +153,12 @@ img {
     color: var(--body-color);
 }
 
-.select { /*color de seleccion de pagina html*/
+.select { 
     color: var(--hover-color);
     position: relative;
 }
-.select::after{
+
+.select::after {
     position: absolute;
     content: '';
     display: block;
@@ -163,7 +169,7 @@ img {
     bottom: 0%;
 }
 
-.contact-list-link{  /* estilos de correo y telefono*/
+.contact-list-link {  /* estilos de correo y telefono*/
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -173,9 +179,6 @@ img {
 a:hover, a:focus {
     color: var(--hover-color);
 }
-a:focus{
-    outline: solid  var(--hover-color);
-}
 
 
 /* ------------------------------------------------------ */
@@ -183,33 +186,33 @@ a:focus{
 /* ------------------------------------------------------ */
 
 
-.box{
+.box {
     display: flex;
 }
 
-.cab{
+.cab {
     border-bottom: 1px solid #ECECEC;
 }
 
-.logo{
+.logo {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
 }
 
-.cab .menu, .menu-list, .cab .contact-list{
+.cab .menu, .menu-list, .cab .contact-list {
     display: flex;
     align-items: center;
 }
 
 
-.cab .contact-list{
+.cab .contact-list {
     display: flex;
     margin-left: auto;
 }
 
 
-.menu-list-link, .contact-list-link{
+.menu-list-link, .contact-list-link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -219,12 +222,12 @@ a:focus{
     margin-right: 50px;
 }
 
-.contact-list-link:hover,   .contact-list-link:focus{
+.contact-list-link:hover,   .contact-list-link:focus {
     color: var(--hover-color);
     fill: var(--hover-color);
 }
 
-.mail svg{
+.mail svg {
     margin-right: 10px;
     padding: 0px;
 }
@@ -236,7 +239,7 @@ a:focus{
 /* ------------------------------------------------------ */
 
 
-.name-section{
+.name-section {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -250,7 +253,7 @@ a:focus{
 /* ----------------- Seccion del titulo ----------------- */
 
 
-.section-title{
+.section-title {
     text-align: center; 
     background-image: linear-gradient(70deg,rgba(47, 48, 58, 0.4),rgba(3, 0, 0, 0.4)), url("../imagenes/Imagen.jpg");
     background-size: 100% 100%; 
@@ -278,19 +281,19 @@ a:focus{
     font-size: 16px;
     line-height: 30px;
 }
-.button-index:focus{
+.button-index:focus {
     outline: solid var(--hover-color);
 }
 
 /* ----------------------> Flexbox <--------------------- */
 
 
-.section-title{
+.section-title {
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.section-title .page-title{
+.section-title .page-title {
     margin: 0 auto;
     padding: 0;
     display: block;
@@ -298,14 +301,14 @@ a:focus{
     margin-bottom: 30px;
 }
 
-.section-title .button-index{
+.section-title .button-index {
     padding: 10px 32px;
 }
 
 
 /* -------------- Seccion caracteristicas --------------- */
 
-.icon{
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,17 +320,17 @@ a:focus{
     border-radius: 4px;
 }
 
-.Characters-list{
+.Characters-list {
     letter-spacing: 0.03em;
 }
 
-.characters-list-title{
+.characters-list-title {
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
-.characters-list-text{
+.characters-list-text {
     line-height: 1.7;
     color: var(--gray-color);
 }
@@ -336,31 +339,31 @@ a:focus{
 /* ----------------------> Flexbox <--------------------- */
 
 
-.Characters-list{
+.Characters-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.Characters-list li{
+.Characters-list li {
     flex-basis: calc((100% - 120px) / 4);
 }
 
 
-.Characters-list .characters-list-title{
+.Characters-list .characters-list-title {
     display: block;
     width: 270px;
     margin-bottom: 10px;
 }
 
-.Characters-list .characters-list-text{
+.Characters-list .characters-list-text {
     display: block;
     align-items: baseline;
     width: 270px;
 }
 
 .craracters-list .Characters-list-text:not(:last-child),
-.Characters-list.characters-list-title:not(:last-child){
+.Characters-list.characters-list-title:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -368,24 +371,24 @@ a:focus{
 
 /* ------------ Seccion A qué nos dedicamos ------------- */
 
-.product{
+.product {
     padding-top: 0;
 }
 
-.products-list{
+.products-list {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-.products-list-img{
+.products-list-img {
     position: relative;
     flex-basis: calc((100% - 60px)/3);
     /* z-index: -1; */
 }
 
-.title-product{
+.title-product {
     display: flex;
     justify-content: center;
     font-family: 'Roboto';
@@ -402,7 +405,7 @@ a:focus{
 
 /* -------------flex box---------------- */
 
-.products-list-img > .title-product{  
+.products-list-img > .title-product {  
     width: 100%;
     position: absolute;
     bottom: 0%;
@@ -413,27 +416,27 @@ a:focus{
 /* ------------------- Nuestro equipo ------------------- */
 
 
-.team{
+.team {
     background: var(--background-botton);
     letter-spacing: 0.03em;
 }
 
-.team-list{
+.team-list {
     text-align: center;
     background: var(--background-botton);
 }
 
-.team-list-img{
+.team-list-img {
     background: var(--background-color);
 }
 
-.team-list-name{
+.team-list-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
 
-.team-list-text{
+.team-list-text {
     font-size: 16px;
     line-height: 1.2;
     color: var(--gray-color);
@@ -443,14 +446,14 @@ a:focus{
 /* ----------------------> Flexbox <--------------------- */
 
 
-.team-list{
+.team-list {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 37px ;
 }
 
-.team-list-img{
+.team-list-img {
     width: 270px;
     flex-direction: column;
     flex-basis: calc((100% - 111px) / 4);
@@ -458,25 +461,25 @@ a:focus{
     border-radius: 0px 0px 4px 4px;
 }
 
-.text-cont{
+.text-cont {
     padding: 30px;
 
 }
 
-.team-list  .team-list-name{
+.team-list  .team-list-name {
     margin-bottom: 10px;
 }
 
 /* -------------------- Estilos svg -------------------- */
 
-.icon-list{
+.icon-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 28px;  
 }
 
-.icon-media{
+.icon-media {
     display: flex;
     flex-basis: calc((100% - 30px) / 4); 
 }
@@ -490,7 +493,7 @@ a:focus{
     fill: #afb1b8;
 }
 
-.social-media:hover, .social-media:focus{
+.social-media:hover, .social-media:focus {
     outline: none;
     /* border: 1px solid var(--hover-color); */
     background:var(--hover-color);
@@ -499,7 +502,7 @@ a:focus{
 
 /* ----------------- Clientes regulares ----------------- */
 
-.client-cont{
+.client-cont {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -510,7 +513,7 @@ a:focus{
     flex-basis: calc(( 100% - 150px ) / 6);
 }
 
-.client-icon{
+.client-icon {
     display: flex;
     width: 170px;
     height: 81px;
@@ -522,27 +525,23 @@ a:focus{
     fill: #AFB1B8;
 }
 
-.client-icon:hover, .client-icon:focus{
-    /* outline: none; */
+
+.client-icon:hover, .client-icon:focus {
     border: 1px solid var(--hover-color);
     fill: var(--hover-color);
 }
-.client-icon:focus{
-    border: ;
-}
-
 
 /* ------------------------------------------------------ */
 /* ---------------------- Footer ------------------------ */
 /* ------------------------------------------------------ */
 
 
-.footer-contact{
+.footer-contact {
     background: var(--background-2);
     letter-spacing: 0.03em;
 }
 
-.footer-contact-list{
+.footer-contact-list {
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -552,7 +551,7 @@ a:focus{
     color: var(--background-color);
 }
 
-.footer-contact-list-item{
+.footer-contact-list-item {
     color: var(--gray-color);
 
 }
@@ -567,42 +566,42 @@ a:focus{
 /* ----------------------> Flexbox <--------------------- */
 /* ------------------------------------------------------ */
 
-.footer-contact{
+.footer-contact {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.cont-contact{
+.cont-contact {
     margin-left: 215px;
     margin-right: 0;
     width: 231px;
 }
 
-.cont-contact>.logo{
+.cont-contact>.logo {
     padding: 0;
     width: 145px;
     display: flex;
     margin-bottom: 9px;
 }
 
-.footer-contact-list{
+.footer-contact-list {
     width: 231px;
     display: flex;
     flex-direction: column;
 }
 
-.footer-contact-list .link{
+.footer-contact-list .link {
     margin-bottom: 9px;
 }
 
 /* --------------- Redes sociales --------------- */
 
-.cont-social{
+.cont-social {
     margin-left: 70px;
 }
 
-.title-footer{
+.title-footer {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -614,19 +613,19 @@ a:focus{
 }
 
 /* ----------------- estilos svg ----------------- */
-.icon-nav{
+.icon-nav {
     margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.icon-footer{
+.icon-footer {
     display: flex;
     flex-basis: calc(( 100% - 30px )/4);
 }
 
-.footer-media{
+.footer-media {
     border-radius: 50%;
     height: 44px;
     padding: 12px;
@@ -634,7 +633,7 @@ a:focus{
     fill: #afb1b8;
 }
 
-.footer-media:hover, .footer-media:focus{
+.footer-media:hover, .footer-media:focus {
     outline: none;
     background: var(--hover-color);
     fill: var(--background-color);
@@ -694,24 +693,24 @@ a:focus{
 /* ------------------------------------------------------ */
 
 
-.briefcase-list{  /*PADRE*/
+.briefcase-list {  /*PADRE*/
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.briefcase-list > .item{
+.briefcase-list > .item {
     margin-right: 8px;
 }
 
-.briefcase-list .briefcase-list-button{
+.briefcase-list .briefcase-list-button {
     display: block;
     justify-content: center;
     padding: 6px 24px;
 }
 
 /* --------------- Contenedor de tarjetas --------------- */
-.card-set{
+.card-set {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -719,27 +718,57 @@ a:focus{
     gap: 24px;
 }
 
-.briefcase-list-item{
+.briefcase-list-item {
+    position: relative;
     flex-basis: calc((100% - 60px) / 3);
     justify-content: center;
     border: 1px solid #EEEEEE; 
 } 
 
-.briefcase-list-item:hover, .briefcase-list-item:focus{
+.briefcase-list-item:hover, .briefcase-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-set h2{
+.card-set h2 {
     width: 322px;
     margin-bottom: 4px;
     justify-content: center;
 }
 
-.text-cont{
+.text-cont {
     padding: 20px 24px;
 }
+
+.transition-p {
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    background: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+transition-property: z-index;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.briefcase-list-item:hover .transition-p {
+    position: absolute;
+    z-index: 0;
+    vertical-align:middle;
+}
+
+
 
 
 

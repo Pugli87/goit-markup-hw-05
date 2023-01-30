@@ -2,29 +2,29 @@
 Tarea 5
 
 
--    Cree el repositorio goit-markup-hw-05.
--    Clone el repositorio creado y copie los archivos de trabajo anteriores enél.
--   Agregue efectos decorativos animados a las páginas de diseño de la tarea de casa #5.
--   Configure las GitHub Pages y agregue un enlace a la página en vivo en el encabezado del repositorio de GitHub.
--   Los criterios de aceptación de trabajo por parte del tutor
+-    Cree el repositorio goit-markup-hw-05.  ----------> OK
+-    Clone el repositorio creado y copie los archivos de trabajo anteriores en él.  ----------> OK
+-   Agregue efectos decorativos animados a las páginas de diseño de la tarea de casa #5.  ----------> OK
+-   Configure las GitHub Pages y agregue un enlace a la página en vivo en el encabezado del repositorio de GitHub.  ----------> OK
+-   Los criterios de aceptación de trabajo por parte del tutor  ----------> OK
 
 El proyecto
 
-«A1» Todos los estilos están contenidos en un archivo styles.css, que se encuentra en la carpetacss.
+«A1» Todos los estilos están contenidos en un archivo styles.css, que se encuentra en la carpetacss.  ----------> OK
 
-«A2» El código fuente está formateado con Prettier. «A3» Todas las imágenes y el contenido del texto se toman del diseño.
+«A2» El código fuente está formateado con Prettier. «A3» Todas las imágenes y el contenido del texto se toman del diseño.  ----------> OK
 
-«A4» Todas las páginas HTML tienen un normalizador de estilo modern-normalize.
+«A4» Todas las páginas HTML tienen un normalizador de estilo modern-normalize.  ----------> OK
 
-«A5» El código está escrito siguiendo. la guía.
+«A5» El código está escrito siguiendo. la guía.  ----------> OK
 
-«A6» El script de ventana modal está vinculado en HTML como un archivo separado llamado modal.js. 
+«A6» El script de ventana modal está vinculado en HTML como un archivo separado llamado modal.js.   ----------> OK
 
 
 
 El marcado
 
-«B1» El marcado HTML se realiza para todos los elementos de diseño. «B2» Las etiquetas se utilizan según su semántica.
+«B1» El marcado HTML se realiza para todos los elementos de diseño. «B2» Las etiquetas se utilizan según su semántica.  ----------> OK
 
 
 
