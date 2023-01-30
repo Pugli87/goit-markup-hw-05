@@ -730,9 +730,6 @@ a:focus{
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.briefcase-list-item:hover{
-    background-color: #2F303A;
-}
 
 .card-set h2{
     width: 322px;
