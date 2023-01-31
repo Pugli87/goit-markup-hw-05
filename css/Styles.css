@@ -17,14 +17,13 @@ body{
     background:var(--background-1);
 }
 
-
 :root{
     --body-color:         #212121;
     --background-color:   #ffffff;
     --background-botton:  #F5F4FA;
     --gray-color:         #757575;
     --background-2:       #2F303A;
-    --hover-color:        #2196F3; /* color select */
+    --hover-color:        #2196F3;
 }
 
 p{
@@ -95,14 +94,11 @@ img{
 }
 
 .modal{
-    /* position: fixed; */
     display: flex;
     justify-content: flex-end;
 
     WIdth: 528px;
     height: 581px;
-    /* left: 50%; */
-    /* top: 50%; */
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -118,6 +114,7 @@ img{
     background-color:white;
     border-radius: 50%;
 }
+
 .icon-close{
     fill: var(--body-color);
 }
@@ -164,7 +161,7 @@ img{
     bottom: 0%;
 }
 
-.contact-list-link{  /* estilos de correo y telefono*/
+.contact-list-link{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -380,7 +377,6 @@ a:hover, a:focus{
 .products-list-img{
     position: relative;
     flex-basis: calc((100% - 60px)/3);
-    /* z-index: -1; */
 }
 
 .title-product{
@@ -688,7 +684,7 @@ a:hover, a:focus{
 /* ------------------------------------------------------ */
 
 
-.briefcase-list{  /*PADRE*/
+.briefcase-list{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
