@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-:focus-visible {
-    outline: solid var(--hover-color);
-
-}
-
 h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
     padding: 0;
@@ -177,6 +172,7 @@ img {
 }
 
 a:hover, a:focus {
+    /* outline: 1px solid var(--hover-color); */
     color: var(--hover-color);
 }
 
@@ -223,6 +219,7 @@ a:hover, a:focus {
 }
 
 .contact-list-link:hover,   .contact-list-link:focus {
+    /* outline: 1px solid var(--hover-color); */
     color: var(--hover-color);
     fill: var(--hover-color);
 }
@@ -281,9 +278,7 @@ a:hover, a:focus {
     font-size: 16px;
     line-height: 30px;
 }
-.button-index:focus {
-    outline: solid var(--hover-color);
-}
+
 
 /* ----------------------> Flexbox <--------------------- */
 
@@ -495,7 +490,6 @@ a:hover, a:focus {
 
 .social-media:hover, .social-media:focus {
     outline: none;
-    /* border: 1px solid var(--hover-color); */
     background:var(--hover-color);
     fill: var(--background-color);
 }
@@ -528,6 +522,7 @@ a:hover, a:focus {
 
 .client-icon:hover, .client-icon:focus {
     border: 1px solid var(--hover-color);
+    outline: 1px solid var(--hover-color);
     fill: var(--hover-color);
 }
 
@@ -659,7 +654,7 @@ a:hover, a:focus {
 }
 
 .briefcase-list-button:hover,.briefcase-list-button:focus {
-    outline: solid var(--hover-color);
+    /* outline: solid var(--hover-color); */
     background: var(--hover-color);
     color: var(--background-color);
 }
@@ -719,7 +714,6 @@ a:hover, a:focus {
 }
 
 .briefcase-list-item {
-    position: relative;
     flex-basis: calc((100% - 60px) / 3);
     justify-content: center;
     border: 1px solid #EEEEEE; 
@@ -741,31 +735,32 @@ a:hover, a:focus {
     padding: 20px 24px;
 }
 
+.img-relative{
+    position: relative;
+    overflow: hidden;
+}
 .transition-p {
-    width: 370px;
-    height: 294px;
-    padding: 63px 24px;
 
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.03em;
 
+    width: 100%;
+    height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
     position: absolute;
     top: 0;
-    z-index: -1;
-transition-property: z-index;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* left: 0; */
+    /* margin: 0; */
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.briefcase-list-item:hover .transition-p {
-    position: absolute;
-    z-index: 0;
-    vertical-align:middle;
+.briefcase-list-item:hover .transition-p, .briefcase-list-item:focus .transition-p {
+    transform: translateY(0%);
 }
 
 
